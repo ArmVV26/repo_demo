@@ -97,13 +97,13 @@ models:
 
       - name: registered_at_utc
         description: "Timestamp UTC del alta."
-        data_type: timestamp_tz
+        data_type: timestamp_ntz
         constraints:
           - type: not_null
 
       - name: last_updated_at_utc
         description: "Timestamp UTC de la última modificación."
-        data_type: timestamp_tz
+        data_type: timestamp_ntz
 
       - name: days_since_registration
         description: "Días transcurridos desde el alta hasta hoy."
@@ -111,7 +111,7 @@ models:
 
       - name: date_load
         description: "Timestamp de la última sincronización del source."
-        data_type: timestamp_tz
+        data_type: timestamp_ntz
         constraints:
           - type: not_null
 
